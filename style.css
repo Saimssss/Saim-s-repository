@@ -1,6 +1,6 @@
 /* basic configuration */
 body{
-    font-family: press start 2p , cursive; /*estilo de fuente gamer retro* */
+     /*estilo de fuente gamer retro* */
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, blue, red);
@@ -24,7 +24,7 @@ h1{
 .slider{
     position: relative;
     width: 90%;
-    max-width: 100px;
+    max-width: 1000px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -33,7 +33,6 @@ h1{
 /*slides container */
 .slides{
     display: flex;
-    flex-direction: row;
     transition: transform 05s ease-in-out;
     width: calc(100% * 6); /* number of images */
 }
@@ -52,9 +51,10 @@ h1{
 /* adjust the images inside of the galery */
 .slide img {
     width: 100%;
-    height: auto;
+    size-adjust: 20px;
+    height: 100%;
     display: block;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
 }   
 
@@ -78,7 +78,7 @@ button {
 }
 
 button:hover{
-    background-color: #facc15;
+    background: #facc15;
     color: darkblue;
     transform: scale(1.2)
 }
@@ -102,7 +102,7 @@ button:hover{
 
 .indicator{
     width: 12px;
-    height: 21px;
+    height: 12px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     cursor: pointer;
@@ -118,4 +118,3 @@ button:hover{
     transform: scale(1.05s);
     transition: transform 0.3s ease-in-out;
 }
-
